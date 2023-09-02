@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      CORHUILA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="container">
+
+  PUNTO UNO
+  <!--<ion-list>
+    <ion-item>
+      <ion-label position="stacked">Usuario</ion-label>
+     <ion-input [(ngModel)]="username" type="text" name="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input [(ngModel)]="password" type="password" name="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" [color]="getButtonColor()" (click)="iniciarSesion()">Iniciar Sesión</ion-button>
+</ion-content> -->
+
+
+  PUNTO DOS
+
+<ion-list>
+  <ion-item *ngFor="let values of products; let position = index" [ngClass]="getRowClass(values)">
+    <ion-label><b>Nombre:</b> {{ values.nombre }}</ion-label>
+    <ion-label><b>Precio:</b> {{ values.precio }}</ion-label>
+    <ion-label><b>Cantidad:</b> {{ values.cantidad }}</ion-label>
+  </ion-item>
+</ion-list>
